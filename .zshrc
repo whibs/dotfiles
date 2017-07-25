@@ -84,5 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cd-dev="cd /c/Users/mark.whibley/Documents/Development"
 alias t="task"
-alias td="task calendar && task list && task projects"
+alias td="task ready && task summary && task ghistory && task calendar"
+alias tr="task ready"
+alias tmux-dev="tmux source-file ~/.tmux/mtc-dev"
 

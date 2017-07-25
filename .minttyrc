@@ -3,7 +3,7 @@ Locale=en_GB
 BellType=0
 BellFlash=yes
 Printer=*
-FontHeight=10
+FontHeight=11
 BoldAsFont=no
 RightClickAction=menu
 Columns=132
@@ -33,5 +33,4 @@ Cyan=10,174,179
 BoldCyan=83,253,233
 White=145,129,117
 BoldWhite=252,232,195
-FontHeight=11
 

@@ -8,11 +8,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/vundle.vim'
 Plugin 'kudabux/vim-srcery-drk'
+"Plugin 'ctrlpvim/ctrlp.vim'
+"Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
 " This is the only way you're going to learn
-" Stick to H, J, K and L for movement and navigation
+" Disable arrow keys to ensure sticking to HJKL
 noremap <left> <nop>
 noremap <down> <nop>
 noremap <up> <nop>
