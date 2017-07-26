@@ -8,10 +8,18 @@ call vundle#begin()
 
 Plugin 'VundleVim/vundle.vim'
 Plugin 'kudabux/vim-srcery-drk'
-"Plugin 'ctrlpvim/ctrlp.vim'
-"Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leshill/vim-json'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'w0rp/ale'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'craigemery/vim-autotag'
+Plugin 'yuttie/comfortable-motion.vim'
 
 call vundle#end()
+filetype plugin indent on
 
 " This is the only way you're going to learn
 " Disable arrow keys to ensure sticking to HJKL
@@ -38,9 +46,6 @@ set backspace=indent,eol,start
 " Switch on syntax hilighting
 syntax on
 
-" Enable file type detection and language-dependent indentation
-filetype plugin indent on
-
 " Show position in document on status bar
 set ruler
 
@@ -61,8 +66,11 @@ set softtabstop=4
 
 " Show lines numbers to the left
 set number
-set relativenumber
+"set relativenumber
 
 " Set colour scheme
 colorscheme srcery-drk 
+
+" Enable 'reverse recursive' searching for a CTAGS file
+set tags=./tags;
 

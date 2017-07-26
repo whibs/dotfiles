@@ -84,7 +84,19 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cd-dev="cd /c/Users/mark.whibley/Documents/Development"
 alias t="task"
-alias td="task ready && task summary && task ghistory && task calendar"
-alias tr="task ready"
+alias td="clear && task ready && task summary && task ghistory && task calendar"
+alias tdc="monitor ~/.task/pending.data task-dash"
+alias tr="task ready list"
+alias in="task add +in"
 alias tmux-dev="tmux source-file ~/.tmux/mtc-dev"
+
+tickle () {
+    deadline=$1
+    shift
+    in +tickle wait:$deadline $@
+}
+
+alias tick='tickle'
+alias think='tickle +1d'
+alias rnd='task add +rnd +next +@computer +@online'
 
